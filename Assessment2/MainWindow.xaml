@@ -1,0 +1,33 @@
+﻿<Window x:Class="BigRedRecruitment.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BigRedRecruitment"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="640" Width="1210">
+    <Grid Margin="0,0,10,0">
+        <TextBox x:Name="TextBoxContractor" HorizontalAlignment="Left" Height="346" Margin="169,238,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="284" />
+        <ComboBox x:Name="ComboBoxContractor" HorizontalAlignment="Left" Height="21" Margin="169,194,0,0" VerticalAlignment="Top" Width="284" SelectionChanged="ComboBoxContractor_SelectionChanged" RenderTransformOrigin="1.105,0.917"/>
+        <TextBox x:Name="TextBoxJob" HorizontalAlignment="Left" Height="346" Margin="600,238,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="285" />
+        <Button Content="Remove Contractor" HorizontalAlignment="Left" Margin="10,245,0,0" VerticalAlignment="Top" Width="151" Click="RemoveContractor_Button_Click"/>
+        <Button  x:Name="AvaliableContractors" Content="Avaliable Contractors" HorizontalAlignment="Left" Margin="10,279,0,0" VerticalAlignment="Top" Height="26" Width="151" Click="AvaliableContractors_Click"/>
+        <Button x:Name="AddContractor" Content="Add Contractor" HorizontalAlignment="Left" Margin="10,316,0,0" VerticalAlignment="Top" Width="151" Click="AddContractor_Click"/>
+        <ComboBox x:Name="ComboBoxJob" HorizontalAlignment="Left" Height="21" Margin="601,189,0,0" VerticalAlignment="Top" Width="284" SelectionChanged="ComboBoxJob_SelectionChanged"/>
+        <Button x:Name="AddJobButton"  Content="Add Job" HorizontalAlignment="Left" Margin="902,316,0,0" VerticalAlignment="Top" Width="209" Click="AddJobButton_Click"/>
+        <Button x:Name="AvaliableJobButton" Content="Avaliable Jobs" HorizontalAlignment="Left" Margin="902,278,0,0" VerticalAlignment="Top" Width="209" Click="AvaliableJobButton_Click"/>
+        <Button x:Name="AssignJobButton"  HorizontalAlignment="Left" Margin="467,256,0,0" VerticalAlignment="Top" Width="115" Height="49" Click="AssignJobButton_Click"/>
+        <Button x:Name="JobCompleteButton" Content="Job Complete" HorizontalAlignment="Left" Margin="902,245,0,0" VerticalAlignment="Top" Width="209" Click="JobCompleteButton_Click"/>
+        <TextBox x:Name="CostMaxinum" HorizontalAlignment="Left" Margin="1098,552,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="76" Height="24"/>
+        <TextBox x:Name="CostMinimum" HorizontalAlignment="Left" Margin="968,552,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="66" Height="24"/>
+        <TextBlock HorizontalAlignment="Left" Margin="1040,556,0,0" TextWrapping="Wrap" Text="Maxnium " VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="901,556,0,0" TextWrapping="Wrap" Text="Minimum" VerticalAlignment="Top" Width="54"/>
+        <Button x:Name="SearchCostButton" Content="Search Cost by Range" HorizontalAlignment="Left" Margin="904,513,0,0" VerticalAlignment="Top" Width="209" Click="SearchCostButton_Click"/>
+        <Image HorizontalAlignment="Left" Height="157" Margin="254,27,0,0" VerticalAlignment="Top" Width="618" Source="/Big RED recrutiment.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="721,142,0,0" TextWrapping="Wrap" Text="Jobs" VerticalAlignment="Top" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Margin="254,142,0,0" TextWrapping="Wrap" Text="Contractors" VerticalAlignment="Top" FontSize="22"/>
+
+
+
+    </Grid>
+</Window>
